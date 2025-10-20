@@ -3,7 +3,18 @@
     "allow": [
       "Bash(git init)",
       "Bash(git remote add origin git@github.com:Japan-Hunting-Association/hunter-magazine.git)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: Hunter Magazine project setup\n\n- Add Docker development environment configuration\n- Add Affinity Publisher design file for vol.1\n- Add project documentation (CLAUDE.md)\n- Add devcontainer and workspace configuration\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push -u origin master)",
+      "Bash(gh auth status)",
+      "Bash(gh auth setup-git)",
+      "Bash(git remote set-url origin https://github.com/Japan-Hunting-Association/hunter-magazine.git)",
+      "Bash(git add README.md)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd README.md for Hunter Magazine project\n\n- Add project overview and description\n- Add directory structure documentation\n- Add development environment setup instructions\n- Add design file information\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git push origin master:main)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nAdd event information and contributor recruitment section\n\n- Add information about upcoming event (技術書典19)\n- Add contributor recruitment section with link to requirements\n- Encourage interested writers to check the recruitment page\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git add .claude/settings.local.json)",
+      "Bash(git commit -m \"Update Claude Code permissions settings\n\n- Update allowed commands in settings.local.json\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\")"
     ],
     "deny": [],
     "ask": []
