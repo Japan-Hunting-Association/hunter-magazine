@@ -1,0 +1,9 @@
+# GitHub CLI authentication
+.gh/
+
+# OS files
+.DS_Store
+
+# IDE files
+.vscode/
+.idea/
